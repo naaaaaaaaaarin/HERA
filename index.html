@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HERA</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- 프로젝트 페이지 CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- jQ PlugIn -->
+    <!-- <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script> -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- rotate JS -->
+    <script defer src="./js/jquery-animate-css-rotate-scale.js"></script>
+    <!-- 작업영역 JS -->
+    <script defer src="./js/main.js"></script>
+
+    <div id="wrap">
+        <!-- Aside PopUp -->
+        <aside>
+            <div class="w1300">
+                <a href="#" class="top_sub">
+                    <p>
+                        로그인하면 확인되는 차별화된 회원가!&nbsp;&nbsp;
+                    </p>
+                    <p>
+                        혜택 확인하기 &nbsp;&nbsp;
+                        <img src="./image/icon/arrow_forward_white_14.png" alt="혜택확인 화살표">
+                    </p>
+                </a>
+            </div>
+            <!-- x클릭 시 배너(부모영역)이 사라짐 -->
+            <p class="close">
+                <img src="./image/icon/quite_white_16.png" alt="X버튼">
+            </p>
+        </aside>
+        <!-- /Aside PopUp -->
+
+        <!-- Header -->
+        <header>
+            <!-- Logo+Lnb -->
+            <div class="lnb_all">
+                <div class="root_lnb w1300">
+                    <!-- Logo -->
+                    <a href="#" class="logo">
+                        <img src="./image/HERA_black_128.png" alt="로고">
+                    </a>
+                    <!-- /Logo -->
+                    <!-- LNB Menu -->
+                    <nav class="local">
+                        <ul class="lnb">
+                            <li><a href="#"><img src="./image/icon/search_black_20.png" alt="검색아이콘"></a></li>
+                            <li><a href="#"><img src="./image/icon/shopping-cart_20.png" alt="장비구니아이콘"></a></li>
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /Logo+Lnb -->
+            <!-- Gnb Menu -->
+            <div class="gnb_all">
+                <nav class="global w1300">
+                    <div class="ham">
+                        <input type="checkbox" id="menu_icon">
+                        <label for="menu_icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                    </div>
+                    <ul class="gnb">
+                        <li><a href="#">헤라 스토리</a>
+                            <div class="submenu">
+                                <div><a href="#">브랜드 스토리</a></div>
+                                <div><a href="#">헤라 히스토리</a></div>
+                                <div><a href="#">라이브러리</a></div>
+                            </div>
+                            <div class="hammenu">
+                                <div><a href="#">브랜드 스토리</a></div>
+                                <div><a href="#">헤라 히스토리</a></div>
+                                <div><a href="#">라이브러리</a></div>
+                            </div>
+                        </li>
+                        <li><a href="#">리미티드</a>
+                            <div class="submenu"></div>
+                            <div class="hammenu"></div>
+                        </li>
+                        <li><a href="#">메이크업</a>
+                            <div class="submenu">
+                                <div><a href="#">메이크업 메인</a></div>
+                                <div><a href="#">페이스</a></div>
+                                <div><a href="#">립</a></div>
+                                <div><a href="#">아이</a></div>
+                            </div>
+                            <div class="hammenu">
+                                <div><a href="#">메이크업 메인</a></div>
+                                <div><a href="#">페이스</a></div>
+                                <div><a href="#">립</a></div>
+                                <div><a href="#">아이</a></div>
+                            </div>
+                        </li>
+                        <li><a href="#">스킨케어</a>
+                            <div class="submenu">
+                                <div><a href="#">스킨케어 메인</a></div>
+                                <div><a href="#">제품 라인</a></div>
+                                <div><a href="#">피부 고민</a></div>
+                                <div><a href="#">제품 유형</a></div>
+                            </div>
+                            <div class="hammenu">
+                                <div><a href="#">스킨케어 메인</a></div>
+                                <div><a href="#">제품 라인</a></div>
+                                <div><a href="#">피부 고민</a></div>
+                                <div><a href="#">제품 유형</a></div>
+                            </div>
+                        </li>
+                        <li><a href="#">프래그런스</a>
+                            <div class="submenu">
+                                <div><a href="#">프래그런스 메인</a></div>
+                                <div><a href="#">제품 라인</a></div>
+                                <div><a href="#">제품 유형</a></div>
+                            </div>
+                            <div class="hammenu">
+                                <div><a href="#">프래그런스 메인</a></div>
+                                <div><a href="#">제품 라인</a></div>
+                                <div><a href="#">제품 유형</a></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="snb">
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">기업소개</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- /Gnb Menu -->
+            <!-- Side gnb -->
+            <div class="side_gnb">
+                <div class="ham">
+                    <input type="checkbox" id="sideHam">
+                    <label for="sideHam">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <div class="side_menu_page">
+                        <img class="side_logo" src="./image/HERA_black_128.png" alt="헤라로고">
+                        <ul class="gnb">
+                            <li>
+                                <div class="s_top">
+                                    <a href="#">헤라 스토리</a>
+                                    <div class="plus">
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="s_bottom">
+                                    <div><a href="#">브랜드 스토리</a></div>
+                                    <div><a href="#">헤라 히스토리</a></div>
+                                    <div><a href="#">라이브러리</a></div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="s_top" href="#">리미티드</a>
+                            </li>
+                            <li>
+                                <div class="s_top">
+                                    <a href="#">메이크업</a>
+                                    <div class="plus">
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="s_bottom">
+                                    <div><a href="#">메이크업 메인</a></div>
+                                    <div><a href="#">페이스</a></div>
+                                    <div><a href="#">립</a></div>
+                                    <div><a href="#">아이</a></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="s_top">
+                                    <a href="#">스킨케어</a>
+                                    <div class="plus">
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="s_bottom">
+                                    <div><a href="#">스킨케어 메인</a></div>
+                                    <div><a href="#">제품 라인</a></div>
+                                    <div><a href="#">피부 고민</a></div>
+                                    <div><a href="#">제품 유형</a></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="s_top">
+                                    <a href="#">프래그런스</a>
+                                    <div class="plus">
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="s_bottom">
+                                    <div><a href="#">프래그런스 메인</a></div>
+                                    <div><a href="#">제품 라인</a></div>
+                                    <div><a href="#">제품 유형</a></div>
+                                </div>
+                            </li>
+                            <div class="side_close">
+                                <img src="./image/icon/quite_black_24.png" alt="닫기버튼">
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <!-- /Header -->
+        <!-- Swiper -->
+        <article class="banner">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./image/banner_1.jpg" alt="배너1"></div>
+                    <div class="swiper-slide"><img src="./image/banner_2.jpg" alt="배너2"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </article>
+        <!-- /Swiper -->
+        <!-- Contents -->
+        <article>
+            <!-- 01 Contents_rouge holic -->
+            <section class="rouge_holic">
+                <div class="w1300">
+                    <h2 class="sec_title">Rouge Holic</h2>
+                    <div class="contents">
+                        <div class="main_contents">
+                            <video autoplay muted loop>
+                                <source src="./video/HERA_rouge_holic_2.mp4">
+                            </video>
+                        </div>
+                        <div class="sub_contents">
+                            <a href="#">
+                                <div>
+                                    <h3>ROUSE HOLIC_SHEER MATTE</h3>
+                                    <p>8 color</p>
+                                </div>
+                                <img src="./image/rouge_holic_1.jpg" alt="루즈홀릭1">
+                                <img src="./image/rouge_holic_2.jpg" alt="루즈홀릭1">
+                            </a>
+                            <a href="#">
+                                <div>
+                                    <h3>ROUSE HOLIC_MATTE</h3>
+                                    <p>20 color</p>
+                                </div>
+                                <img src="./image/rouge_holic_sheer_matt_1.jpg" alt="루즈홀릭1">
+                                <img src="./image/rouge_holic_sheer_matt_2.jpg" alt="루즈홀릭1">
+                            </a>
+                            <a href="#">
+                                <div>
+                                    <h3>ROUSE HOLIC</h3>
+                                    <p>10 color</p>
+                                </div>
+                                <img src="./image/rouge_holic_matt_1.jpg" alt="루즈홀릭1">
+                                <img src="./image/rouge_holic_matt_2.jpg" alt="루즈홀릭1">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /01 Contents_rouge holic -->
+            <!-- 02 Contents_black family -->
+            <section class="black_family">
+                <div class="w1300">
+                    <div class=" contents">
+                        <div class="left">
+                            <h2>Black Family</h2>
+                            <ul>
+                                <li class="active" onclick="tab_menu(0)">블랙 쿠션</li>
+                                <li onclick="tab_menu(1)">블랙 파운데이션</li>
+                                <li onclick="tab_menu(2)">옴므 블랙 퍼펙트</li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li class="b_content0">
+                                    <video width="800" height="450" autoplay muted loop>
+                                        <source src="./video/HERA_BLACK CUSHION.mp4">
+                                    </video>
+                                </li>
+                                <li class="b_content1">
+                                    <video width="800" height="450" autoplay muted loop>
+                                        <source src="./video/HERA_BLACK FOUNDATION.mp4">
+                                    </video>
+                                </li>
+                                <li class="b_content2">
+                                    <video width="800" height="450" autoplay muted loop>
+                                        <source src="./video/HERA_Homme.mp4">
+                                    </video>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>
+                        <a href="#">More Product</a>
+                        <img src="./image/icon/arrow_forward_black_18.png" alt="">
+                    </p>
+                </div>
+            </section>
+            <!-- /02 Contents_black family -->
+            <!-- 03 Best Review -->
+            <section class="review">
+                <div class="w1300">
+                    <h2 class="sec_title">Best Review</h2>
+                    <div class="review_photo">
+                        <ul>
+                            <li><a href="#"><img src="./image/리뷰1.jpg" alt="리뷰 1"></a></li>
+                            <li><a href="#"><img src="./image/리뷰2.jpg" alt="리뷰 2"></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><img src="./image/리뷰3.jpg" alt="리뷰 3"></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><img src="./image/리뷰4.jpg" alt="리뷰 4"></a></li>
+                            <li><a href="#"><img src="./image/리뷰5.jpg" alt="리뷰 5"></a></li>
+                            <li><a href="#"><img src="./image/리뷰6.jpg" alt="리뷰 6"></a></li>
+                            <li><a href="#"><img src="./image/리뷰7.jpg" alt="리뷰 7"></a></li>
+                            <li><a href="#"><img src="./image/리뷰8.jpg" alt="리뷰 8"></a></li>
+                            <li><a href="#"><img src="./image/리뷰9.jpg" alt="리뷰 9"></a></li>
+                        </ul>
+                    </div>
+                    <p>
+                        <a href="#">More review</a>
+                        <img src="./image/icon/arrow_forward_black_18.png" alt="">
+                    </p>
+                </div>
+            </section>
+            <!-- /03 Best Review -->
+        </article>
+        <!-- /Contents -->
+        <!-- Footer -->
+        <footer>
+            <div class="footer w1300">
+                <div class="f_left">
+                    <ul>
+                        <li><a href="#">이용약관&nbsp;&nbsp;|</a></li>
+                        <li><a href="#">&nbsp;&nbsp;쇼핑몰&nbsp;이용안내&nbsp;&nbsp;|</a></li>
+                        <li><a href="#">&nbsp;&nbsp;개인정보처리방침&nbsp;&nbsp;|</a></li>
+                        <li><a href="#">&nbsp;&nbsp;고객센터&nbsp;&nbsp;|</a></li>
+                        <li><a href="#">&nbsp;&nbsp;1:1문의&nbsp;&nbsp;|</a></li>
+                        <li><a href="#">&nbsp;&nbsp;매장안내</a></li>
+                    </ul>
+                    <div>
+                        <p>주식회사 아모레퍼시픽 | 대표이사 : 김애리</p>
+                        <p>사업등록번호 : 123-45-67890 | 통신판매업신고번호 제 2022-서울강남-00214호</p>
+                        <p>주소 : 서울특별시 강남구 아차산로 123 | 대표전화 02-1234-5678 | 팩스 : 02-123-4567</p>
+                    </div>
+                    <div>
+                        <p>
+                            고객님의 안전거래를 위해 현금 결제시, <br>
+                            구매안전 서비스를 이용하실 수 있습니다. <a href="#">[가입사실확인]</a>
+                        </p>
+                        <img src="./image/a11y.png" alt="과학기술정보통신부">
+                    </div>
+                    <div>
+                        <p>Copyright © 2022 HERA Right Reserved.</p>
+                    </div>
+                </div>
+                <div class="f_right">
+                    <dl>
+                        <dt>고객만족센터</dt>
+                        <dd>080-123-4567</dd>
+                        <dd>평일 09:00 ~ 18:00 | 점심시간 13:00 ~ 14:00</dd>
+                    </dl>
+                    <dl>
+                        <dt>Bank Info</dt>
+                        <dd>국민은행 356-1234-04-123456</dd>
+                        <dd>예금주 : (주)아모레퍼시픽</dd>
+                    </dl>
+                </div>
+            </div>
+        </footer>
+        <!-- /Footer -->
+
+    </div>
+</body>
+
+</html>
